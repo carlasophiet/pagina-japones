@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:400,400i,700,800')
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.contenedor{
+	background-color: white;
+	font-family: "Muli", sans-serif;
+	color: #5F5959;
+	/*margin: 0 auto;*/
+	width: 100%;
+	height: 100%;
+}
+
+header{
+	width: 100%;
+	margin:0;
+	padding:0;
+	height: 20%;
+	background-color: #E79999;
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	}
+
+header h1{
+	font-weight: bolder;
+	font-size: 4em;
+	margin-left: 10%;
+}	
+header h4{
+	margin-bottom: 2%;
+	margin-left: 10%;
+}
+/*.costado {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}*/	
+header ul{
+	list-style: none;
+	color: #5F5959;
+	padding-top: 3.5em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+header ul a {
+	color: #E33333;
+}
+.silabario-completo{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-around;
+	padding-left: 13%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+.imagen{
+	margin-right:0.5em;
+	margin-left:0.3em;
+}
+.subtitulo{
+	padding-left: 35%;
+}
+.linea-tres{
+	margin-left: 15%;
+}
+.obj-linea-tres{
+	margin-right: 2%;
+}
+.boton-silabario{
+	display:flex;
+	justify-content: flex-end;
+	padding-top: 2em;
+	/*border-radius: 10%;
+	-moz-border-radius: 10%;
+	-webkit-border-radius: 10%;*/
+}
+.boton-silabario a{
+	color:#5F5959;
+}
+.boton-ejercicios{
+	display:flex;
+	justify-content: space-between;
+	margin-top:2em;
+	margin-bottom: 2em;
+	border-radius: 10%;
+	-moz-border-radius: 10%;
+	-webkit-border-radius: 10%;
+	padding-left: 0.5em;
+}	
+
+.boton a{
+	color:#5F5959;
+}
+
+footer{
+	width: 110%;
+	margin:0;
+	padding-top: 2%;
+	padding-right:0;
+	height: 15%;
+	background-color: #E79999;
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+ footer form {
+ 	padding: 2%;
+ }
+
+footer .autor{
+	padding-top: 1%;
+	padding-left: 10%;
+}
+footer a{
+	color: #E33333;
+}
+
+.ejercicios-contenedor {
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+	padding-left: 10%;
+	padding-top: 2%;
+}
+.ejercicio{
+	border-style: 2px solid;
+	border-color:#FFF;
+}
+.boton-ejercicios{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 10%;
+	padding-left: 10em;
+}
+
+.boton-solo-dos{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top:2em;
+	margin-bottom: 2em;
+	padding-left: 3em;
+}
+.boton-solo-dos a{
+	color:#5F5959;
+}
+.boton-solo-dos .siguiente{
+	padding-left: 20em;
+}
+.explicacionCompleta{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	width: 95%;
+	padding-left: 5%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+
+} 
+.tablas input{
+	width: 2.5em;
+	height: 1.8em;
+}
+
+table{
+	margin-top: 1.5em;
+}
+.boton-sonido{
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+
+
+
+
+@media screen and (min-width: 480px) and (max-width: 768px) and (orientation: portrait){
+			
+ }
+
