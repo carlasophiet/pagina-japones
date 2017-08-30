@@ -1,4 +1,5 @@
 $(document).ready(function(){ 
+	$('.respuesta-div').hide();
 	$('.particula').bind('mouseenter mouseleave',function(){
 		console.log('estoy');
 				$(this).attr({
@@ -11,7 +12,7 @@ $(document).ready(function(){
 	$('#botonEjercicios').on('click',function(){
 		var valUserEjercicios= $('.respuestaSola:checked').map(function(){return $(this).val();}).get();
 		console.log(valUserEjercicios);//ME DEVUELVE LOS FALSE/TRUE <3 
-		validarRadios(valUserEjercicios);
+		validarRadios(valUserEjercicios, '.respuesta-div');
 	})//boton ejercicios
 
 	$('#botonKSonidoImpuro').on('click',function(){
@@ -53,7 +54,8 @@ function validarInputs(arr,string){
 	}
 }//function validarInputs
 
-function validarRadios(arr){
+function validarRadios(arr, div){
+	$(div).hide()
 	for(i=0;i<arr.length;i++){
 		var respuesta=false;
 		if (arr[i]== true){
@@ -67,7 +69,12 @@ function validarRadios(arr){
 		}
 		if(respuesta == true){
 			console.log($('#'+i));
-			$('#'+i).css('border-color','green'); 
-		}else{ $('#'+i).css('border-color','red'); }
+			$(div).show();
+			$(div).append('<p>¡Bien!</p>');
+			$(div).css('color', 'green') 
+		}else{ 
+			$(div).show();
+			$(div).append('<p>No es correcto</p>');
+			$(div).css('color', 'red')  }
 	}
 }
